@@ -1,0 +1,337 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+  <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <p class="titre-mobile">Kangouroo</p>
+                        <a class="navbar-brand" href="#">
+                            <img alt="logo" src="img/logo-blanc.svg" class="logo">
+                            <img alt="logo" src="img/logo-vert.svg" class="logo-vert">
+                            <img alt="logo" src="img/bob.svg" class="bob">
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <button type="button" class="btn btn-default btn-chaud connexion">Connexion</button>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="flag"></span><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Allemagne</a></li>
+                                    <li><a href="#">Australie</a></li>
+                                    <li><a href="#">Belgique</a></li>
+                                    <li><a href="#">Espagne</a></li>
+                                    <li><a href="#">France</a></li>
+                                    <li><a href="#">Kong-Kong</a></li>
+                                    <li><a href="#">Irlande</a></li>
+                                    <li><a href="#">Italie</a></li>
+                                    <li><a href="#">Pays-Bas</a></li>
+                                    <li><a href="#">Royaume-Uni</a></li>
+                                    <li><a href="#">Singapore</a></li>
+                                    <li><a href="#">Emirats Arabes Unis</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Français<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Français</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-sm-push-6 header-left">
+                <div class="bandeau">
+                    <img id="logo-left" src="img/kang1.svg" alt="logo du site">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-pull-6 header-right">
+                <div class="bloc-head">
+                    <h1 class="titre-site">Vos restaurants préférés, livrés en moins de 30 minutes.</h1>
+                    <form class="form-inline" method="post" action="search/">
+                        <div class="form-group">
+                            <label for="address" class="sr-only">Saisissez votre adresse</label>
+                            <input class="form-control" id="address" name="address" placeholder="Saisissez votre adresse">
+                            <button type="submit" class="btn btn-default">Voir les restaurants</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container carte">
+        <div class="titre-container">
+            <h1 class="titre-B">A la carte</h1>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-5">
+                <div class="photo-carte" style="background-image: url(img/carte1.jpg)">
+                    <h1 class="titre-W titre-W text-middle">Pépites de quartier</h1>
+                </div>
+                <p>Découvrez la sélection gourmande de notre équipe experte et passionnée.</p>
+                <a href="#">Voir Pépites de quartier &rarr;</a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-7 box">
+                <div class="photo-carte" style="background-image: url(img/carte2.jpg)">
+                    <h1 class="titre-W text-middle">Grand plaisirs, petits prix</h1>
+                </div>
+                <p>Se régaler est une affaire de tous les jours. Une sélection validée par votre porte-monnaie.</p>
+                <a href="#">Voir Grand plaisirs, petits prix &rarr;</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-7">
+                <div class="photo-carte" style="background-image: url(img/carte3.jpg);">
+                    <h1 class="titre-W text-middle">Crème de la crème</h1>
+                </div>
+                <p>Pour impressionner votre rencard ou fêter un anniversaire, marquez le coup avec un repas spécial.</p>
+                <a href="#">Voir Crème de la crème &rarr;</a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-5 box">
+                <div class="photo-carte" style="background-image: url(img/carte4.jpg);">
+                    <h1 class="titre-W text-middle">Dessert et douceurs</h1>
+                </div>
+                <p>Qui a dit que les desserts et le goûter étaient réservés aux enfants ? Certainement pas nous.</p>
+                <a href="#">Voir Dessert et douceurs &rarr;</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-5">
+                <div class="photo-carte" style="background-image: url(img/carte5.jpg);">
+                    <h1 class="titre-W text-middle">Equilibrés et délicieux</h1>
+                </div>
+                <p>
+                    Pas besoin de rendre votre régime douloureux. Ces plats équilibrés et sains vont vous redonner le sourire !</p>
+                <a href="#">Voir Equilibrés et délicieux &rarr;</a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-7 box">
+                <div class="photo-carte" style="background-image: url(img/carte6.jpg);">
+                    <h1 class="titre-W text-middle">Exclusivité Deliveroo</h1>
+                </div>
+                <p>Du plus pointu au repaire de quartier, vous ne les trouverez nulle part ailleurs.</p>
+                <a href="#">Voir Eclusivité Deliveroo &rarr;</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="photo-carte" style="background-image: url(img/carte7.jpg);">
+                    <h1 class="titre-W text-middle">Plaisir coupables</h1>
+                </div>
+                <p>Rendez l'ordinaire extraordinaire : la comfort food à son maximum. Allez, vous le méritez bien !</p>
+                <a href="#">Voir Plaisir coupables &rarr;</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid livraison">
+        <div class="container">
+            <div class="titre-container">
+                <h1 class="titre-B">Vous les aimez, nous vous les livrons.</h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="photo-livraison" style="background-image: url(img/livraison1.jpg)"></div>
+                    <h3>Paris New-York</h3>
+                    <p>Hamburger de qualité ! Une viande bretonne d'exception hachée sur place. Des petits pains à la recette secrète. Des recettes addictives.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="photo-livraison" style="background-image: url(img/livraison2.jpg)"></div>
+                    <h3>Triplettak</h3>
+                    <p>La pizzeria napolitaine de Belleville qui sent bon l’Italie, la pizza qui sort tout juste du four et le Spritz !</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="photo-livraison" style="background-image: url(img/livraison3.jpg)"></div>
+                    <h3>Le Petit Cambodge</h3>
+                    <p>Référence incontournable du canal Saint-Martin, bien connu pour ses BoBuns. Laissez-vous également tenter par les spécialités: Natin, Porc au caramel et Pâtés impériaux !</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="photo-livraison" style="background-image: url(img/livraison4.jpg)"></div>
+                    <h3>Les Cocottes</h3>
+                    <p>Découvrez la cuisine du chef étoilé Christian Constant avec Les Cocottes. Un ambassadeur de luxe pour vos repas livrés. Au menu, tous les grands classiques : légumes du moment en cocotte, la véritable salade César, risotto, tarte au
+                        chocolat...
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="photo-livraison" style="background-image: url(img/livraison5.jpg)"></div>
+                    <h3>Le Pain Quotidien</h3>
+                    <p>Profitez de chaque plaisir de la vie quotidienne. Le Pain Quotidien propose des ingrédients simples et sains, du bon pain, des fruits et des légumes frais et de saison issus de l’agriculture biologique.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="photo-livraison" style="background-image: url(img/livraison6.jpg)"></div>
+                    <h3>Schwartz's Deli</h3>
+                    <p>L'authentique Deli New-Yorkais.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="photo-livraison" style="background-image: url(img/livraison2.jpg)"></div>
+                    <h3>James Bún</h3>
+                    <p>Chez James Bun, la nouvelle Câng-tin vietnamienne des Batignolles, découvrez une cuisine authentique et une équipe aux petits soins ! Une invitation au voyage comme dans une rue d’Hanoï !</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="photo-livraison" style="background-image: url(img/livraison8.jpg)"></div>
+                    <h3>Le Camion Qui Fume</h3>
+                    <p>1er food truck de France, Le Camion qui Fume vous propose ses burgers gourmets faits maison, issus de produits locaux et de qualité.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="photo-livraison" style="background-image: url(img/livraison9.jpg)"></div>
+                    <h3>Jour</h3>
+                    <p>Jour est un restaurant de salades 100% nature ! Libre à vous de composer votre salade sur mesure ou de choisir parmi 12 recettes dont 4 de saison ! Tous nos produits sont frais et faits maison ! Et nous nous engageons à vous proposer
+                        des légumes de saison français ou d'ile de France.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="photo-livraison" style="background-image: url(img/livraison10.jpg)"></div>
+                    <h3>Blend Hamburger</h3>
+                    <p>Blend rassemble autour de hamburgers gourmets aux buns maison cuits deux fois par jour par ses boulangers, et d’une viande d’Yves-Marie le Bourdonnec, fraîchement hachée sur place. Frites, frites de patate douce et coleslaw 100% maison.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="photo-livraison" style="background-image: url(img/livraison11.jpg)"></div>
+                    <h3>Maria Luisa</h3>
+                    <p>Adresse incontournable du Canal St Martin depuis 10ans. Les pizzas préparées dans la plus pure tradition napolitaine sont classées dans le palmarès des meilleures pizzas de Paris. Pâte fine et croustillante, sauce tomate relevée, produits
+                        de qualité! </p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="photo-livraison" style="background-image: url(img/livraison12.jpg)"></div>
+                    <h3>Big Fernand</h3>
+                    <p>Faites vous livrer les plus français des burgers : les fameux hamburgés maison de nos moustachus préférés !</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid chaud">
+        <div class="container cont-chaud">
+            <div class="titre-container">
+                <h1 class="titre-B">Tout chaud !</h1>
+            </div>
+            <div class="row row-chaud">
+                <div class="col-xs-6 col-left-chaud">
+                    <div class="poly">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-right-chaud" style="">
+                    <h3>Deliveroo for Business</h3>
+                    <p>Employés ou clients affamés, notre équipe corporate est là pour vous aider.</p>
+                    <button type="button" class="btn btn-default btn-chaud">Se renseigner</button>
+                </div>
+            </div>
+            <div class="row row-chaud">
+                <div class="col-xs-6 col-right-chaud">
+                    <h3>Avez-vous l'application ?</h3>
+                    <p class="p-display">Gardez Deliveroo dans votre poche ! Disponible sur l'App Store et Google Play.</p>
+                    <button type="button" class="btn btn-default btn-chaud apple"></button>
+                    <button type="button" class="btn btn-default btn-chaud google"></button>
+                    <div class="poly">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-left-chaud2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Travail -->
+    <div class="container travail">
+        <div class="titre-container">
+            <h3 class="titre-B">Travaillez avec nous</h3>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 travail-1">
+                <div>
+                    <img src="img/travail-1.jpg" class="img-travail" alt="travail">
+                </div>
+                <div class="pad-travail">
+                    <div class="pg-empty-placeholder bou"></div>
+                    <h4 class="">Pédale avec nous</h4>
+                    <p>Tu aimes le vélo ? Tu revendiques ton indépendance ? Deviens partenaire coursier Deliveroo et accède à des revenus rapides et significatifs avec un emploi du temps flexible ! La communauté de bikers Deliveroo, c’est aussi une multitude
+                        de bons plans.</p>
+                    <button type="button" class="btn btn-default btn-chaud btn-travail">Rejoindre la flotte</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 travail-2">
+                <div class="">
+                    <img src="img/travail-2.jpg" class="img-travail" alt="">
+                </div>
+                <div class="pad-travail">
+                    <h4 class="">Livrez avec nous</h4>
+                    <p>Nous sommes toujours à l'affût de super restaurants pour nous rejoindre dans notre révolution de la livraison. Faites équipe avec nous et étendez votre clientèle. De plus, nous nous occupons des détails pour que vous puissiez vous
+                        concentrer sur ce que vous savez faire de mieux : cuisiner.</p>
+                    <button type="button" class="btn btn-default btn-chaud btn-travail">Se renseigner</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 travail-3">
+                <div class="">
+                    <img src="img/travail-3.jpg" class="img-travail" alt="">
+                </div>
+                <div class="pad-travail">
+                    <h4 class="">Rejoignez-nous</h4>
+                    <p>Déjeuners du vendredi gargantuesques et un environnement ultra dynamique ? Découvrez les postes à pourvoir dans les bureaux Deliveroo les plus près de chez vous et rejoignez le mouvement !</p>
+                    <button type="button" class="btn btn-default btn-chaud btn-travail">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="btn-footer2">
+                <button type="button" class="btn btn-default btn-chaud apple"></button>
+                <button type="button" class="btn btn-default btn-chaud google"></button>
+            </div>
+            <ul class="menu-footer">
+                <li><a href="http://blog.deliveroo.fr/">Blog</a></li>
+                <li><a href="/fr/careers">Nous rejoindre</a></li>
+                <li><a href="/fr/contact">Nous contacter</a></li>
+                <li><a href="/fr/faq">FAQ</a></li>
+                <li><a href="/fr/legal">Mentions légales</a></li>
+                <li><a href="/fr/privacy">Confidentialité</a></li>
+                <li><a href="/fr/cookies">Cookies</a></li>
+                <li><a href="/fr/sitemap">Plan du site</a></li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <ul class="footer-reseaux">
+                    <li>
+                        <a class="reseaux reseaux-TW" target="_blank" href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a class="reseaux reseaux-FB" target="_blank" href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a class="reseaux reseaux-IN" target="_blank" href="#">Instagram</a>
+                    </li>
+                </ul>
+                <div class="footer-copyright">
+                    <p>&#xA9;Nailletine - Michel - Thierry</p>
+                </div>
+                <div class="btn-footer1">
+                    <button type="button" class="btn btn-default btn-chaud apple"></button>
+                    <button type="button" class="btn btn-default btn-chaud google"></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'layout.twig' %} {% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Ajouter un utilisateur</h1>
+        </div>
+        <div class="col-12">
+            <form method="post" action="/users">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Username" name="username">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Email" name="email">
+                    </div>
+                    <div class="col">
+                        <input type="password" class="form-control" placeholder="Password" name="password">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary">Valider</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
