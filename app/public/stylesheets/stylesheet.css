@@ -1,0 +1,615 @@
+body {
+    font-family: 'Amiko', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.titre {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.carte, .livraison, .chaud, .travail {
+    padding-top: 50px;
+}
+
+.titre-W {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.titre-site {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.titre-B {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.titre {
+    text-align: left!;
+}
+
+.header-left {
+    background-image: url(/img/photo-header1.png);
+    background-size: cover;
+    height: 500px;
+}
+
+.header-right {
+    background-color: #00ccbc;
+    color: white;
+    padding-top: 175px;
+    padding-bottom: 100px;
+    height: 500px;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #440063;
+    border-color: #440063;
+}
+
+.btn-default:hover {
+    color: #fff;
+    background-color: #440063;
+    border-color: #440063;
+}
+
+.btn {
+    border-radius: 0px;
+    margin-left: -4px;
+    padding: 19px 12px;
+}
+
+.form-control {
+    border-radius: 0px;
+    width: 74%!important;
+    height: 61px;
+}
+
+.form-group {
+    display: flex;
+}
+
+.bloc-head {
+    max-width: 549px;
+    margin: 0 auto;
+}
+
+.bandeau {
+    background-image: linear-gradient(96deg, #00ccbc 14%, transparent 14.04%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-left: -15px;
+}
+
+#logo-left {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@media only screen and (max-width: 767px) and (min-width: 0px) {
+    .bandeau {
+        background-image: linear-gradient(-6deg, #00ccbc 25%, transparent 25.04%);
+        height: 100%;
+    }
+    .header-right {
+        padding-top: 0;
+        height: 190px;
+    }
+    .header-left {
+        height: 250px;
+        background-size: 166%;
+        background-position: 4% 82%;
+    }
+    #logo-left {
+        width: 12%;
+    }
+    .titre-site {
+        font-size: 26px;
+    }
+
+}
+
+@media (min-width: 767px) {
+    .form-inline .form-group {
+        display: flex;
+    }
+}
+
+
+/*modif CSS livraion*/
+
+.container-fluid.livraison {
+    background-color: #ffeae4;
+}
+
+.photo-livraison {
+    background-size: cover;
+    max-width: 100%;
+    background-position: 50% 50%;
+    padding-top: 50%;
+}
+
+
+/********** Tout Chaud ! ***********/
+
+.container-fluid.chaud {
+    background: #f3f5f5;
+    overflow: hidden;
+    padding: 50px 5px 80px;
+}
+
+.row.row-chaud {
+    margin-bottom: 30px;
+    background: #fff;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+button.btn.btn-default.btn-chaud {
+    background-color: #00ccbc;
+    border: transparent;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 5px 20px;
+    line-height: 2;
+}
+
+button.btn.btn-default.btn-chaud:hover {
+    background-color: #00c1b2;
+}
+
+.col-right-chaud {
+    box-sizing: border-box;
+    padding: 20px 38px 40px 31px;
+}
+
+.col-left-chaud {
+    background-image: url(/img/chaud1.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 236px;
+}
+
+.titre-B {
+    margin: 0 0 35px;
+}
+
+.poly {
+    width: 40px;
+    height: 120%;
+    background: #ffffff;
+    transform: rotate(6deg);
+    position: absolute;
+    right: -13px;
+    top: -20px;
+    z-index: 1;
+}
+
+.col-left-chaud2 {
+    background-image: url(/img/chaud3.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 236px;
+}
+
+button.btn.btn-default.btn-chaud.apple {
+    width: 135px;
+    height: 40px;
+    margin-right: 7px;
+    background-image: url(/img/chaud2.svg);
+    background-position: 0%;
+    background-size: cover;
+    background-color: #ffffff;
+}
+
+button.btn.btn-default.btn-chaud.google {
+    width: 135px;
+    height: 40px;
+    background-image: url(/img/chaud2.svg);
+    background-position: 100%;
+    background-size: cover;
+    background-color: #ffffff;
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .cont-chaud.container {
+        width: 98%;
+    }
+    h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:766px) {
+    h3 {
+        font-size: 22px;
+    }
+    button.btn.btn-default.btn-chaud {
+        font-size: 14px;
+        padding: 4px 10px;
+        margin-top: 0px;
+    }
+    .col-right-chaud {
+        padding: 0px 0px 11px 20px;
+    }
+    .col-left-chaud {
+        height: 155px;
+    }
+    .p-display {
+        display: none;
+    }
+    .col-left-chaud2 {
+        height: 105px;
+    }
+}
+
+
+/***********************************/
+
+
+/*modif carte nailletine */
+
+.photo-carte {
+    height: 150px;
+    background-position: 50%, 50%, 50%, 50%;
+    background-size: cover;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 979px) and (min-width: 0px) {
+    .text-middle {
+        font-size: 28px;
+    }
+}
+
+.text-middle {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.titre-container {
+    margin-bottom: 35px;
+}
+
+a {
+    text-decoration: underline;
+    color: #00a396;
+}
+
+
+/*modif CSS Footer*/
+
+footer {
+    background-color: #2e3333;
+    padding-top: 10px;
+}
+
+.menu-footer li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 13px;
+}
+
+.menu-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-footer {
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.btn-footer1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.btn-footer2 {
+    text-align: center;
+    padding-bottom: 20px;
+    display: none;
+}
+
+.footer-copyright {
+    font-family: 'Amiko', sans-serif;
+    font-size: 14px;
+    color: #a0918a;
+    float: right;
+    margin-top: 35px;
+}
+
+.footer-reseaux {
+    float: left;
+    list-style: none;
+    margin-top: 17px;
+    padding-left: 0px;
+}
+
+.footer-reseaux li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+}
+
+.reseaux {
+    background: url(/img/reseaux.svg) no-repeat 0 0;
+    background-size: 80px;
+    border: 1px solid rgba(232, 164, 16, 0.3);
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    display: block;
+    text-indent: -9999em;
+    transition: background-color 0.1s linear;
+}
+
+.reseaux-TW {
+    background-position: -17px 11px;
+    border-color: rgba(85, 172, 238, 0.7);
+    background-position: -17px -22px;
+    border: none;
+}
+
+.reseaux-FB {
+    background-position: 14px 10px;
+    border-color: rgba(59, 89, 152, 0.7);
+    background-position: 14px -22px;
+    border: none;
+}
+
+.reseaux-IN {
+    background-position: -48px 10px;
+    border-color: rgba(81, 127, 164, 0.7);
+    background-position: -48px -22px;
+    border: none;
+}
+
+.reseaux.reseaux-TW:hover {
+    background-position: -17px -22px;
+    background-color: #55acee;
+    border-color: #55acee;
+}
+
+.reseaux.reseaux-FB:hover {
+    background-position: 14px -22px;
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+
+.reseaux.reseaux-IN:hover {
+    background-position: -48px -22px;
+    background-color: #517fa4;
+    border-color: #517fa4;
+}
+
+@media (max-width:766px) {
+    .btn-footer1 {
+        display: none;
+    }
+    .btn-footer2 {
+        display: block;
+    }
+}
+
+
+/***** Travaillez avec nous ********/
+
+h4 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container.travail {
+    padding: 50px 5px 80px;
+}
+
+.travail-1 {
+    background-color: #ff3d3d;
+    margin-right: 30px;
+}
+
+.travail-2 {
+    background-color: #ff8100;
+    margin-right: 30px;
+}
+
+.travail-3 {
+    background-color: #a0918a;
+}
+
+.pad-travail {
+    padding: 30px;
+    color: #fff;
+}
+
+img.img-travail {
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+}
+
+.travail-1, .travail-2, .travail-3 {
+    padding: 0%;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .travail-1, .travail-2, .travail-3 {
+        width: 31.3%;
+        height: 43.6em;
+    }
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+    .travail-1, .travail-2, .travail-3 {
+        width: 30.5%;
+        height: 45.6em;
+    }
+    h4 {
+        font-size: 32px;
+    }
+    h3.titre-B {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .travail-1, .travail-2, .travail-3 {
+        width: 31.5%;
+        height: 41.6em;
+    }
+}
+
+@media (max-width:767px) {
+    h4 {
+        font-size: 26px;
+    }
+    h3.titre-B {
+        font-size: 26px;
+    }
+    button.btn.btn-default.btn-chaud.btn-travail {
+        padding: 5px 20px;
+        ;
+        border-radius: 2px;
+    }
+    .travail-1, .travail-2, .travail-3 {
+        width: 94%;
+        margin: 0% 5% 0% 3%;
+    }
+    .titre-container {
+        margin-left: 0.5em;
+    }
+}
+/******** navbar ********/
+
+.navbar-default{
+   transition: background-color 0.2s ease;
+   background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+}
+.navbar-default.shrink {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    box-shadow: -1px 0px 4px 0 #b7b7b7;
+}
+button.btn.btn-default.btn-chaud.connexion {
+    background-color: #00ccbc;
+    border: transparent;
+    margin-top: 8px;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 1px 17px;
+    line-height: 2;
+}
+
+ul.nav.navbar-nav.navbar-right {
+    margin: 8px;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+img.logo {
+    width: 53%;
+    margin-top: -0.3em;
+}
+img.logo-vert {
+    width: 53%;
+    margin-top: -42px;
+    display: none;
+}
+
+img.logo-vert.shrink {
+    display: block;
+}
+
+@media (min-width: 768px){
+.navbar-right {
+    background-color: #fff;
+}
+}
+
+.flag::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(/img/flag.jpg);
+    background-size: 216px 18px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+    border-radius: 10px;
+    background-position: 18% 50%;
+}
+@media (min-width:768px) {
+    img.bob {
+        display: none;
+    }
+    .titre-mobile {
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+
+    .titre-container {
+        margin-left: 0.5em;
+    }
+    .navbar-default {
+        background-color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+    }
+    img.logo-vert.shrink {
+        display: none;
+    }
+    .logo.shrink {
+        display: none;
+    }
+    img.logo {
+        display: none;
+    }
+    img.bob {
+        width: 13%;
+        margin-left: -11%;
+        display: block;
+    }
+    p.titre-mobile {
+        font-size: 2em;
+        font-weight: 600;
+        letter-spacing: -2px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}

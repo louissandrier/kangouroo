@@ -4,7 +4,7 @@ const router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('users/register.twig');
+  res.render('users/login.twig');
 });
 
 router.post('/add/', (req, res, next) => {
